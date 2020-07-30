@@ -1,0 +1,12 @@
+vue-cli+element-ui 电商后台管理系统
+
+前端：vue_shop
+npm install 安装依赖
+npm run serve 运行
+
+后端：vue_api_server
+db文件夹mysql导入数据库
+npm install 安装依赖
+node app.js 运行
+
+后端非本人编写！
