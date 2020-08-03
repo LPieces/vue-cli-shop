@@ -87,6 +87,7 @@ export default {
             this.getGoodsList()
         },
         async removeById(id) {
+            console.log(id)
             const confirmResule = await this.$confirm('此操作将永久删除该商品, 是否继续?', '提示', {
             confirmButtonText: '确定',
             cancelButtonText: '取消',
@@ -94,6 +95,7 @@ export default {
             }).catch(err => err)
             if (confirmResule !== 'confirm') return this.$message.info('已取消删除')
             const { data: res } = await this.$axios.delete(`goods/${id}`)
+            console.log(res)
             if (res.meta.status !== 200) return this.$message.error('删除失败')
             this.$message.success(res.meta.msg)
             this.getGoodsList()

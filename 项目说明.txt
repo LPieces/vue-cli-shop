@@ -9,4 +9,8 @@ db文件夹mysql导入数据库
 npm install 安装依赖
 node app.js 运行
 
+编译打包后把dist放到 vue_shop_server
+npm install 安装依赖
+node app.js 运行
+
 后端非本人编写！

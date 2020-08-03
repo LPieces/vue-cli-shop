@@ -154,6 +154,7 @@ export default {
             const { data: res } = await this.$axios.get('roles')
             if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
             this.rolesList = res.data
+            console.log(this.rolesList)
         },
         // 监听添加角色的对话框的关闭事件
         addDialogClosed() {
